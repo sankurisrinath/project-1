@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <STYLE> 
+    #portfolio{
+        text-align: center;
+        background-color: #eeeeee;
+        color: #333333;
+        border: 1px solid #dddddd;
+        cursor:pointer;
+        border-radius:5px;
+        padding:8px 12px;
+    }
+    option{
+        background: #ffffff;
+        cursor: pointer;
+    }
+    #portfolio:focus,
+    #portfolio :hover{
+        outline:none;
+        border :1px solid #bbbbbb
+    }
+    body{
+        background-color: beige;
+    }
+    </STYLE>
+    <title>select</title>
+</head>
+<body>
+    <h1>NAME YOUR ROLE</h1>
+    <!-- <form name="webpage"></form> -->
+    <select name="portfolio" id="portfolio">
+        <option value="#" disabled selected> select any one </option>
+        <option value ="user_identity.html">user</option>
+        <option value="customer_identity.html">customer</option>
+    </select> 
+    <BR>
+        <br>
+        
+        <img src="who.jpeg" alt="naming role" height="500px">
+
+    <script>
+     var urlMenu = document.getElementById('portfolio');
+            urlMenu.onchange = function()
+            {
+                var useroption = this.options[this.selectedIndex];
+                if(useroption.value != "nothing")
+                {
+                    window.open(useroption.value,"HTML CSS JAVASCRIPT","");
+                }
+            }
+
+            
+
+</script>
+</body>
+</html>

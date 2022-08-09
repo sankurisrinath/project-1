@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style1.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+     <style>
+        input[type=submit]{
+            border: none;
+            text-align: center;
+            background-color:#d1efef ;
+        }
+        body{
+            background-color: honeydew;
+        }
+        input[type=text],input[type=password]{
+            font-weight: bold;
+        }
+        /* .container{
+            border-color: lightpink;
+        } */
+    </style>  
+</head>
+<body>
+    <div class="container">
+    <h2 style="font-family:Arial, Helvetica, sans-serif">CONFIRM YOUR IDENTITY</h2><hr>
+    </div>
+    <form action="staff.php" method="post" class="container">
+        <div class="container">
+        <label ><b>Username</b></label>
+        <input type="text" placeholder="username" name="username" required/>
+        <label ><b>Password</b></label>
+        <input type="password" placeholder="password" name="psw"required/>
+        <input type="checkbox" name="yes" required/><B>CHECK YOUR DETAILS</B>
+        <br>
+        <button type="submit" class="register">SUBMIT</button>
+    </div>
+    </form>
+</body>
+</html>
